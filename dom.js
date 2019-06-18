@@ -299,7 +299,8 @@ DOMImplementation.prototype = {
 		//  readonly attribute NamedNodeMap     entities;
 		//  readonly attribute NamedNodeMap     notations;
 		return node;
-	}
+	},
+	document: new Document()
 };
 
 
@@ -1302,5 +1303,4 @@ try{
 if(typeof require == 'function'){
 	exports.DOMImplementation = DOMImplementation;
 	exports.XMLSerializer = XMLSerializer;
-	exports.Document = Document;
 }
